@@ -1,0 +1,15 @@
+Sherlock és Watson;6;7
+Simpson család;29;14
+Rejtjelek;4;8
+Váltságdíj;2;13
+Halálos fegyver;3;9
+Jack Ryan;1;8
+Harrow;1;10
+Bodyguard;1;7
+Blacklist;5;22
+Homeland;7;12
+Quantico;3;13
+Vikingek;5;14
+Az utolsó királyság;3;10
+Family Guy;16;7
+Falka;2;6

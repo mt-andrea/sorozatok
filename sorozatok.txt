@@ -1,0 +1,9 @@
+Váltságdíj;2;13
+Harrow;1;10
+Bodyguard;1;7
+Blacklist;5;22
+Homeland;7;12
+Quantico;3;15
+Az utolsó királyság;3;10
+Falka;2;6
+Doctor Who;10;6

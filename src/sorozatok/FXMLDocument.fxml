@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" vgap="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sorozatok.FXMLDocumentController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Cím:" />
+      <Label text="Évad:" GridPane.rowIndex="1" />
+      <TextField fx:id="txtCim" GridPane.columnIndex="1" GridPane.columnSpan="3" />
+      <Spinner fx:id="spEvad" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="Rész:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Spinner fx:id="spResz" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Button defaultButton="true" mnemonicParsing="false" onAction="#hozzaad" prefWidth="80.0" text="Hozzáad" GridPane.columnIndex="4" />
+      <Button mnemonicParsing="false" onAction="#leptet" prefWidth="80.0" text="Léptet" GridPane.columnIndex="5" />
+      <Button cancelButton="true" mnemonicParsing="false" onAction="#ujsorozat" prefWidth="80.0" text="Új" GridPane.columnIndex="6" />
+      <Button mnemonicParsing="false" onAction="#modosit" prefWidth="80.0" text="Módosít" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+      <Button mnemonicParsing="false" onAction="#torol" prefWidth="80.0" text="Töröl" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+      <Hyperlink onAction="#web" text="Sorozatbarát" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+      <TableView fx:id="tblSorozatok" onKeyPressed="#bill" prefHeight="350.0" GridPane.columnSpan="7" GridPane.rowIndex="2">
+        <columns>
+            <TableColumn fx:id="oCim" prefWidth="350.0" text="Cím" />
+            <TableColumn fx:id="oEvad" prefWidth="100.0" style="-fx-alignment: center;" text="Évad" />
+            <TableColumn fx:id="oResz" prefWidth="100.0" style="-fx-alignment: center;" text="Rész" />
+        </columns>
+      </TableView>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</GridPane>
